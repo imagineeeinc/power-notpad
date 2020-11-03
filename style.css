@@ -1,0 +1,22 @@
+:root {
+    margin: 0px;
+    font-family:  'Space Mono, Arial', monospace;
+    font: monospace;
+    padding: 2px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-image: url(img/back.gif); 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e8e8e8; 
+  border-radius: 3px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccd6d9;
+}

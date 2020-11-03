@@ -1,0 +1,39 @@
+{
+  "name": "power-notpad",
+  "version": "1.0.0",
+  "description": "a more powerful notepad than the default notepad",
+  "main": "application.js",
+  "scripts": {
+    "electron": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imagineeeinc/power-notpad.git"
+  },
+  "keywords": [
+    "notepad"
+  ],
+  "author": "imagineee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imagineeeinc/power-notpad/issues"
+  },
+  "homepage": "https://github.com/imagineeeinc/power-notpad#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-reload": "^1.5.0",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "power-notepad",
+    "productName": "power-notepad",
+    "copyright": "Copyright © year ${author}",
+    "mac": {
+      "category": "public.app-category.productivity"
+    }
+  }
+}
