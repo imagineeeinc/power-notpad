@@ -9,7 +9,7 @@
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background-image: url(img/back.gif); 
+  color: aliceblue;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {

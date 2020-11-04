@@ -2,6 +2,10 @@ const { app, BrowserWindow } = require('electron')
 
 function createWindow () {
   const win = new BrowserWindow({
+    //frame: false,
+    //backgroundColor: '#3b10e6',
+    fullscreenable: true,
+    hasShadow: true,
     width: 800,
     height: 600,
     webPreferences: {
