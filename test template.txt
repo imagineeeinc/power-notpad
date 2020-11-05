@@ -1,0 +1,7 @@
+const mon = require("jsmon")
+
+var mill = mon.pull("git.3.fnl")
+
+mill.mon.commit("mon.jmon")
+
+mill.mon.push(to, "flt.x-ytrm")
