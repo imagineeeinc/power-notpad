@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>Power Notepad</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="file/font.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="titlebar">
-            <h4>Power Notepad</h4>
+        <span id="title">
+            <span id="title-text">Power Notepad</span>
+        </span>
     </div>
+    <span id="trafic-lights">
+        <button id="minimize-app" class="trafic-btn"></button>
+        <button id="maximize-app" class="trafic-btn"></button>
+        <button id="close-app" class="trafic-btn"></button>
+    </span>
     <!--<h1 onclick="alert('Welcome')">Hello World!</h1>
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.-->
-    <!--<textarea></textarea>-->
+    <textarea></textarea>
     <script src="app.js"></script>
 </body>
 </html>

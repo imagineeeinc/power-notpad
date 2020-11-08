@@ -1,8 +1,16 @@
 :root {
     margin: 0px;
     padding: 0px;
-    font-family:  'Space Mono, Arial', monospace;
-    font: monospace;
+    font-family: plex,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    animation-name: view;
+    animation-duration: 0.2s;
+}
+@keyframes view {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+* {
+  transition-duration: .2s;
 }
 body {
   padding: 0;
@@ -24,11 +32,12 @@ body {
   background: #ccd6d9;
 }
 #titlebar {
+  margin-left: 0;
   background: #3b10e6;
-  color: white;
+  color: black;
   font-size: 18px;
-  margin-top: -24px;
-  margin-bottom: -24px;
+  margin-top: -8px;
+  margin-bottom: 25px;
   display: block;
   position: relative;
   top: 0;
@@ -37,4 +46,37 @@ body {
   border-bottom-right-radius: 5px;
   padding-left: 5px;
   padding-right: 5px;
+  height: 25px;
+  -webkit-app-region: drag;
+  z-index: 1;
+}
+#title {
+  display: none;
+}
+#trafic-lights {
+  position: absolute;
+  margin-right: 5px;
+  /*top: 0;*/
+  right: 0;
+  z-index: 2;
+}
+.trafic-btn {
+  border-radius: 30px;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: solid 1px transparent;
+  opacity: 0.7;
+}
+#close-app {
+  background-color: crimson;
+}
+#maximize-app {
+  background-color: darkorange;
+}
+#minimize-app {
+  background-color: springgreen;
+}
+.trafic-btn:hover {
+  opacity: 1;
 }
