@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>Power Notepad</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-    <link href="file/font.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contorls.css">
+    <link rel="stylesheet" href="styles/titlebar.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <div id="titlebar">
@@ -13,16 +17,28 @@
             <span id="title-text">Power Notepad</span>
         </span>
     </div>
-    <span id="trafic-lights">
-        <button id="minimize-app" class="trafic-btn"></button>
-        <button id="maximize-app" class="trafic-btn"></button>
-        <button id="close-app" class="trafic-btn"></button>
-    </span>
+    <div id="controls">
+        <span class="con-men">File</span>
+        <span class="con-men">Edit</span>
+        <span class="con-men">View</span>
+        <span class="con-men">Help</span>
+        <span class="con-men">Special</span>
+        <span id="trafic-lights">
+            <button id="minimize-app" class="trafic-btn"></button>
+            <button id="maximize-app" class="trafic-btn"></button>
+            <button id="close-app" class="trafic-btn"></button>
+        </span>
+    </div>
+    <div id="main">
+        <div contenteditable="plaintext-only" id="textbox">hello, world!</div>
+    </div>
     <!--<h1 onclick="alert('Welcome')">Hello World!</h1>
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.-->
-    <textarea></textarea>
-    <script src="app.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/app-controls.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/textedit.js"></script>
 </body>
 </html>

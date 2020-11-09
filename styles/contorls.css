@@ -1,0 +1,51 @@
+#controls {
+    position: sticky;
+    padding: 5px;
+    box-shadow: 0 0 10px lightgrey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    cursor: default;
+  }
+  #trafic-lights {
+    position: absolute;
+    margin-right: 5px;
+    right: 0;
+    z-index: 2;
+  }
+  .trafic-btn {
+    border-radius: 30px;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: solid 1px transparent;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  #close-app {
+    background-color: crimson;
+    box-shadow: 0 0 10px lightcoral;
+  }
+  #maximize-app {
+    background-color: darkorange;
+    box-shadow: 0 0 10px lightsalmon;
+  }
+  #minimize-app {
+    background-color: springgreen;
+    box-shadow: 0 0 10px lightgreen;
+  }
+  .trafic-btn:hover {
+    opacity: 1;
+  }
+  
+  .con-men {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+  }
+  .con-men:hover {
+    box-shadow: 0 0 10px lightgrey;
+  }

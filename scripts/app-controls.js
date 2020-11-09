@@ -1,6 +1,6 @@
-const { BrowserWindow } = require("electron");
+/*const { BrowserWindow } = require("electron");
+const { remote } = require('electron')*/
 
-const { remote } = require('electron')
 win = remote.getCurrentWindow()
 
 document.getElementById("close-app").onmouseup = function() {
@@ -8,7 +8,7 @@ document.getElementById("close-app").onmouseup = function() {
 };
 document.getElementById("maximize-app").onmouseup = function() {
     if (win.isMaximized()) {
-        win.setSize(800, 600);
+        win.unmaximize()
     } else {
         win.maximize()
     }
