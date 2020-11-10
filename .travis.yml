@@ -7,8 +7,11 @@ os:
 install: npm install
 script: 
   - if [ "$TRAVIS_OS_NAME" == "windows" ]; then
-    - npm run dist-win
+    - npm run dist-win;
+    fi
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then
-    - npm run dist-mac
+    - npm run dist-mac;
+    fi
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then
-    - npm run dist-linux
+    - npm run dist-linux;
+    fi
