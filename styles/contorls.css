@@ -1,51 +1,106 @@
 #controls {
-    position: sticky;
-    padding: 5px;
-    box-shadow: 0 0 10px lightgrey;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-weight: bolder;
-    margin-bottom: 15px;
-    cursor: default;
-  }
-  #trafic-lights {
-    position: absolute;
-    margin-right: 5px;
-    right: 0;
-    z-index: 2;
-  }
-  .trafic-btn {
-    border-radius: 30px;
-    width: 20px;
-    height: 20px;
-    outline: none;
-    border: solid 1px transparent;
-    opacity: 0.7;
-    cursor: pointer;
-  }
-  #close-app {
-    background-color: crimson;
-    box-shadow: 0 0 10px lightcoral;
-  }
-  #maximize-app {
-    background-color: darkorange;
-    box-shadow: 0 0 10px lightsalmon;
-  }
-  #minimize-app {
-    background-color: springgreen;
-    box-shadow: 0 0 10px lightgreen;
-  }
-  .trafic-btn:hover {
-    opacity: 1;
-  }
-  
-  .con-men {
-    border-radius: 3px;
-    display: inline-block;
-    padding: 5px;
-    margin: 0;
-    cursor: pointer;
-  }
-  .con-men:hover {
-    box-shadow: 0 0 10px lightgrey;
-  }
+  position: sticky;
+  padding: 5px;
+  box-shadow: 0 0 10px lightgrey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  cursor: default;
+}
+#trafic-lights {
+  position: absolute;
+  margin-right: 5px;
+  right: 0;
+  z-index: 2;
+}
+.trafic-btn {
+  border-radius: 30px;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: solid 1px transparent;
+  opacity: 0.7;
+  cursor: pointer;
+}
+#close-app {
+  background-color: crimson;
+  box-shadow: 0 0 10px lightcoral;
+}
+#maximize-app {
+  background-color: darkorange;
+  box-shadow: 0 0 10px lightsalmon;
+}
+#minimize-app {
+  background-color: springgreen;
+  box-shadow: 0 0 10px lightgreen;
+}
+.trafic-btn:hover {
+  opacity: 1;
+}
+
+.con-men {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.con-men:hover {
+  box-shadow: 0 0 10px lightgrey;
+  opacity: 1;
+}
+#controls:hover {
+  box-shadow: 0 0 20px lightgrey;
+}
+
+.con-men-mens {
+  min-width: 100px;
+  box-shadow: 0 0 10px lightgrey;
+  position: absolute;
+  z-index: 2;
+  top: 35px;
+  background-color: white;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 5px;
+}
+.con-men-mens-h {
+  display: none;
+}
+.con-men-mens:hover {
+  box-shadow: 0 0 10px lightgrey;
+}
+.con-men-mens > span {
+  opacity: 0.6;
+  padding: 5px;
+  display: block;
+}
+.con-men-mens > span:hover {
+  opacity: 1;
+  box-shadow: 0 0 5px lightgrey;
+}
+
+#file-men {
+  left: 10px;
+}
+#edit-men {
+  left: 65px;
+}
+#view-men {
+  left: 125px;
+}
+#help-men {
+  left: 180px;
+}
+#special-men {
+  left: 240px;
+}
+#choose-file {
+  font-size: inherit;
+  font-weight: inherit;
+}
+input[type="file"] {
+  display: none;
+}

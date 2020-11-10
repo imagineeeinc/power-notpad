@@ -34,9 +34,12 @@
   "build": {
     "appId": "power-notepad",
     "productName": "power-notepad",
-    "copyright": "Copyright © year ${author}",
+    "copyright": "Copyright © year Imagineee",
     "mac": {
       "category": "public.app-category.productivity"
+    },
+    "win": {
+      "target": ["portable", "zip"]
     }
   }
 }

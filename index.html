@@ -10,35 +10,66 @@
     <link rel="stylesheet" href="styles/contorls.css">
     <link rel="stylesheet" href="styles/titlebar.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
 <body>
     <div id="titlebar">
+        <img src="file/power-notepad.svg" id="logo">
         <span id="title">
             <span id="title-text">Power Notepad</span>
         </span>
     </div>
     <div id="controls">
-        <span class="con-men">File</span>
-        <span class="con-men">Edit</span>
-        <span class="con-men">View</span>
-        <span class="con-men">Help</span>
-        <span class="con-men">Special</span>
+        <span id="file" class="con-men">File</span>
+        <span id="edit" class="con-men">Edit</span>
+        <span id="view" class="con-men">View</span>
+        <span id="help" class="con-men">Help</span>
+        <span id="special" class="con-men">Special</span>
+
+        <div id="file-men" class="con-men-mens con-men-mens-h">
+            <span>new</span>
+        <span onclick="clickchoosefile()">
+                <label id="choose-file">
+                    <input type="file" onchange="openfile(this)" oninput="openfile(this)"/>
+                    open
+                </label>
+            </span>
+            <!--<span onmouseup="openfile()">open</span>-->
+            <span>save</span>
+            <span>save as</span>
+        </div>
+        <div id="edit-men" class="con-men-mens con-men-mens-h"><h5>edit</h5></div>
+        <div id="view-men" class="con-men-mens con-men-mens-h"><h5>view</h5></div>
+        <div id="help-men" class="con-men-mens con-men-mens-h"><h5>help</h5></div>
+        <div id="special-men" class="con-men-mens con-men-mens-h"><h5>🎉special🎉</h5></div>
+
         <span id="trafic-lights">
             <button id="minimize-app" class="trafic-btn"></button>
             <button id="maximize-app" class="trafic-btn"></button>
             <button id="close-app" class="trafic-btn"></button>
         </span>
     </div>
+    <div id="Modal" class="modal">
+        <div class="modal-content">
+          <span class="close-m">&times;</span>
+          <p id="m-txt">
+          </p>
+        </div>
+      </div>
     <div id="main">
-        <div contenteditable="plaintext-only" id="textbox">hello, world!</div>
+        <div contenteditable="plaintext-only" id="textbox"></div>
     </div>
     <!--<h1 onclick="alert('Welcome')">Hello World!</h1>
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.-->
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/textedit.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/app-controls.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/textedit.js"></script>
+    <script src="scripts/userfiles.js"></script>
+    <script src="scripts/menus.js"></script>
+    <script src="scripts/fileworker.js"></script>
 </body>
 </html>

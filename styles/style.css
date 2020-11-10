@@ -27,12 +27,13 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #e8e8e8; 
   border-radius: 3px;
+  cursor: pointer;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ccd6d9;
 }
 ::selection {
-  background-color: rgb(59, 16, 230, 0.4);
-  color: black;
+  background-color: rgb(59, 16, 230, 0.6);
+  color: white;
 }
