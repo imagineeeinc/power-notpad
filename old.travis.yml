@@ -2,14 +2,8 @@ language: node_js
 node_js: 14
 os:
   - windows
-    script:
-      - npm run dist-win
   - linux
-    script:
-      - npm run dist-linux
   - osx
-    script:
-      - npm run dist-mac
 install: npm install
 script: 
   - npm run dist-win
