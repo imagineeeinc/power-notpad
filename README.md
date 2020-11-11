@@ -1,4 +1,4 @@
-# power-notpad
+# Power-Notpad
 
 a more powerful notepad than the default one
 
