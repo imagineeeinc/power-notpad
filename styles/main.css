@@ -23,3 +23,8 @@
     overflow-x: hidden;
     overflow-wrap: break-word;
 }
+mark {
+    background-color: rgb(114, 83, 237, 0.6);
+    color: white;
+    border-radius: 5px;
+}

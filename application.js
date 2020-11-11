@@ -13,7 +13,9 @@ function createWindow () {
     width: 800,
     height: 600,
     minimizable: true,
-		maximizable: true,
+    maximizable: true,
+    minWidth: 470,
+    minHeight: 260,
     //defaultFontFamily: "monospace",
     webPreferences: {
       enableRemoteModule: true,

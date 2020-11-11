@@ -1,4 +1,7 @@
 var text = document.getElementById("textbox")
+var undoli = []
+var redoli = []
+undoli.push(gettext())
 text.focus()
 
 setInterval(function() {
@@ -11,3 +14,17 @@ setInterval(function() {
         document.getElementById("main").style.boxShadow = "0 0 10px lightgrey"
     }
 }, 50);
+
+function undo() {
+    redoli.push(gettext())
+    const lastundo = undoli.pop()
+    if (lastundo != undefined) {
+        settext(lastundo)
+    }
+}
+function redo() {
+    const lastredo = redoli.pop()
+    if (lastredo != undefined) {
+        settext(lastredo)
+    }
+}

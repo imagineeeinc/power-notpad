@@ -36,4 +36,20 @@ body {
 ::selection {
   background-color: rgb(59, 16, 230, 0.6);
   color: white;
+  border-radius: 5px;
+}
+button {
+  background-color: white;
+  color: grey;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+button:hover {
+  color: black;
+  border: 1px solid grey;
+}
+a {
+  color: darkslateblue;
 }

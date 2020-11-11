@@ -23,25 +23,54 @@
         <span id="file" class="con-men">File</span>
         <span id="edit" class="con-men">Edit</span>
         <span id="view" class="con-men">View</span>
-        <span id="help" class="con-men">Help</span>
+        <span id="help" class="con-men">Options/Help</span>
         <span id="special" class="con-men">Special</span>
 
         <div id="file-men" class="con-men-mens con-men-mens-h">
-            <span>new</span>
-        <span onclick="clickchoosefile()">
+            <span onclick="clickchoosefile()">
                 <label id="choose-file">
                     <input type="file" onchange="openfile(this)" oninput="openfile(this)"/>
                     open
                 </label>
             </span>
             <!--<span onmouseup="openfile()">open</span>-->
-            <span>save</span>
-            <span>save as</span>
+            <span onmouseup="savefile()">save</span>
+            <span onmouseup="saveas()">save as</span>
         </div>
-        <div id="edit-men" class="con-men-mens con-men-mens-h"><h5>edit</h5></div>
-        <div id="view-men" class="con-men-mens con-men-mens-h"><h5>view</h5></div>
-        <div id="help-men" class="con-men-mens con-men-mens-h"><h5>help</h5></div>
-        <div id="special-men" class="con-men-mens con-men-mens-h"><h5>🎉special🎉</h5></div>
+        <div id="edit-men" class="con-men-mens con-men-mens-h">
+            <span onclick="undo()">undo</span>
+            <span onclick="redo()">redo</span>
+            <span>
+                <label>
+                    Find
+                    <br>
+                    <input id="find" type="search">
+                </label>
+                <br>
+                <label>
+                    Replace
+                    <br>
+                    <input id="replace" type="search" onchange="find()">
+                </label>
+                <br>
+                <button onmouseup="replacef()">Replace First</button>
+                <button onmouseup="replacea()">Replace All</button>
+            </span>
+        </div>
+        <div id="view-men" class="con-men-mens con-men-mens-h">
+            <span id="max-win">Maximize-Window</span>
+            <span id="min-win">Minimize-Window</span>
+            <span id="clo-win">Close-App</span>
+        </div>
+        <div id="help-men" class="con-men-mens con-men-mens-h">
+            <span onmouseup="openmodal('Power NotePad')">App Info</span>
+        </div>
+        <div id="special-men" class="con-men-mens con-men-mens-h">
+            <span onclick="tellspe()">🎉special🎉</span>
+            <span onmouseup="creator()">Creator's Website</span>
+            <span onmouseup="repo()">Project Repo</span>
+            <span onmouseup="prosite()">Project Website</span>
+        </div>
 
         <span id="trafic-lights">
             <button id="minimize-app" class="trafic-btn"></button>
@@ -59,7 +88,7 @@
     <div id="main">
         <div contenteditable="plaintext-only" id="textbox"></div>
     </div>
-    <!--<h1 onclick="alert('Welcome')">Hello World!</h1>
+    <!--<h1>Hello World!</h1>
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.-->
@@ -71,5 +100,7 @@
     <script src="scripts/userfiles.js"></script>
     <script src="scripts/menus.js"></script>
     <script src="scripts/fileworker.js"></script>
+    <script src="scripts/find.js"></script>
+    <script src="scripts/special.js"></script>
 </body>
 </html>

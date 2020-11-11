@@ -13,3 +13,17 @@ document.getElementById("help").onclick = function() {
 document.getElementById("special").onclick = function() {
     document.getElementById("special-men").classList.toggle("con-men-mens-h")
 }
+/*
+document.getElementById("file-men").classList.toggle("con-men-mens-h")
+document.getElementById("edit-men").classList.toggle("con-men-mens-h")
+document.getElementById("view-men").classList.toggle("con-men-mens-h")
+document.getElementById("view-men").classList.toggle("con-men-mens-h")
+document.getElementById("special-men").classList.toggle("con-men-mens-h")
+*/
+function closemens() {
+document.getElementById("file-men").classList.toggle("con-men-mens-h")
+document.getElementById("edit-men").classList.toggle("con-men-mens-h")
+document.getElementById("view-men").classList.toggle("con-men-mens-h")
+document.getElementById("view-men").classList.toggle("con-men-mens-h")
+document.getElementById("special-men").classList.toggle("con-men-mens-h")
+}
