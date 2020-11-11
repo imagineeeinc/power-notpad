@@ -56,6 +56,25 @@ function savefile() {
         }
     }
 }
+function savenclose() {
+    if (curfile != "") {
+        fs.writeFile(curfile, gettext(),  function (err) {
+            if (err) return console.log(err);
+        })
+        curtxt = gettext()
+    } else if (curfile == "") {
+        var save = dialog.showSaveDialogSync([BrowserWindow, ], {title: "Save File as"})
+        //console.log(save)
+        if (save != undefined) {
+            curfile = save
+            fs.writeFile(curfile, gettext(),  function (err) {
+                if (err) return console.log(err);
+            })
+            curtxt = gettext()
+            closeapp()
+        }
+    }
+}
 function saveas() {
     var save = dialog.showSaveDialogSync([BrowserWindow, ], {title: "Save File as"})
     //console.log(save)

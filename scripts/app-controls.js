@@ -3,8 +3,15 @@ const { remote } = require('electron')*/
 
 win = remote.getCurrentWindow()
 
-document.getElementById("close-app").onmouseup = function() {
+function closeapp() {
     win.close()
+}
+document.getElementById("close-app").onmouseup = function() {
+    if (curtxt != gettext()) {
+        openmodal("<h2>Do you want to save changes?</h2><button onclick='savenclose()'>Save changes and leave</button><button onclick='closeapp()'>do not save and leave</button><button onclick='hidemodal()'>cancel</button>")
+    } else if (curtxt == gettext()) {
+        win.close()
+    }
 };
 document.getElementById("clo-win").onmouseup = function() {
     win.close()

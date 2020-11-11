@@ -13,6 +13,9 @@ function openmodal(text) {
 close.onclick = function() {
   modal.style.display = "none";
 }
+function hidemodal() {
+  modal.style.display = "none";
+}
 
 window.onclick = function(event) {
   if (event.target == modal) {
