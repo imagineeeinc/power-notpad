@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/imagineeeinc/power-notpad#readme",
   "dependencies": {
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "electron": "^10.1.5",
@@ -39,7 +40,10 @@
       "category": "public.app-category.productivity"
     },
     "win": {
-      "target": ["portable", "zip"]
+      "target": [
+        "portable",
+        "zip"
+      ]
     }
   }
 }

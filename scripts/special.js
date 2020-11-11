@@ -1,3 +1,4 @@
+console.log("%c0" + "%c0" + "%c0" + "%cWelcome to the devtools of power notepad", "color: springgreen;", "color: darkorange;", "color: crimson;", "color: aqua;")
 function creator() {
     shell.openExternal('https://imagineeeinc.github.io/')
 }
@@ -12,4 +13,5 @@ function tellspe() {
 }
 function devtool() {
     win.webContents.openDevTools()
+    hidemodal()
 }
