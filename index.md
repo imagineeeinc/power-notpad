@@ -1,37 +1,57 @@
-## Welcome to GitHub Pages
+# Power-Notpad
 
-You can use the [editor on GitHub](https://github.com/imagineeeinc/power-notepad/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+a more powerful notepad than the default one
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Getting the app
+[Go here and find the one you need](https://github.com/imagineeeinc/power-notepad/releases/tag/Beta1.0.0)
 
-### Markdown
+## About
+Are you boerd of the default notepad on your system? or you want more features?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Then Power Notepad is for you, It has a new unique, mordern, minimlist UI and built for speed.
 
-```markdown
-Syntax highlighted code block
+And is also very hackable making it perfect for making it your own.
 
-# Header 1
-## Header 2
-### Header 3
+Later on it will support more features like: 
+- partialy custom themes
+- font sizes, custom fonts
+- markdown support
+- rtf support
+- pdf viewing
+- word document viewing
+- html editor
+- extension support
+- photo viewer
+- audio player
+- video player 
+- and maybe more
 
-- Bulleted
-- List
+Most of the feature are theoretical and won't even pass the testing but this is the list.
 
-1. Numbered
-2. List
+### building your own
+Things needed to install
+- [Node js](https://nodejs.org/)
+- [Git (optional)](https://git-scm.com/)
 
-**Bold** and _Italic_ and `Code` text
+get the latest repo by doing ```git clone https://github.com/imagineeeinc/power-notepad.git``` or by downloding the zip from github
 
-[Link](url) and ![Image](src)
+next you have to install the dependencies by:
+```bash
+npm install
 ```
+For testing run
+```bash
+npm run electron
+```
+And for building into a distributible, use the commands bellow depending on your system
+```bash
+#Windows
+npm run dist-win
+#MacOS
+npm run dist-mac
+#Linux
+npm run dist-linux
+```
+and you will find the build file in the 'dist' folder which will be newely created.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/imagineeeinc/power-notepad/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+And Done!
