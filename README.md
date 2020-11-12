@@ -3,7 +3,7 @@
 a more powerful notepad than the default one
 
 ## Getting the app
-[Go here and find the one you need](https://github.com/imagineeeinc/power-notepad/releases/tag/Beta1.0.1)
+[Go here and find the one you need](https://github.com/imagineeeinc/power-notepad/releases)
 
 ## About
 Are you boerd of the default notepad on your system? or you want more features?
