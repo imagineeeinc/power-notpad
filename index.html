@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/modal.css">
     
-    <!--<script type="text/javascript" src="https://imagineee-api.glitch.me/version/power-notepad.ver.json"></script>-->
+    <style id="font-size">
+        #textbox {
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <div id="titlebar">
@@ -63,15 +67,28 @@
             <span id="max-win">Maximize-Window</span>
             <span id="min-win">Minimize-Window</span>
             <span id="clo-win">Close-App</span>
+            <span>
+                Font Size
+                <br>
+                <button onmousedown="incresefsize()">Increse size +</button>
+                <br>
+                <button onmousedown="decresefsize()">Decrese size -</button>
+                <br>
+                <button id="cursize">Current Size:</button>
+            </span>
         </div>
         <div id="help-men" class="con-men-mens con-men-mens-h">
-            <span onmouseup="openmodal('Power NotePad')">About Power Notepad</span>
+            <span onmouseup="about()">About Power Notepad</span>
+            <span onmouseup="reload()">Reload</span>
+            <span onmouseup="repo()">Project Repo</span>
+            <span onmouseup="prosite()">Project Website</span>
+            <span onmouseup="openupdatelin()" id="update">Update</span>
         </div>
         <div id="special-men" class="con-men-mens con-men-mens-h">
             <span onclick="tellspe()">🎉special🎉</span>
-            <span onmouseup="creator()">Creator's Website</span>
-            <span onmouseup="repo()">Project Repo</span>
-            <span onmouseup="prosite()">Project Website</span>
+            <span onmouseup="creator()">👨‍💻Creator's Website👨‍💻</span>
+            <span onmouseup="repo()">📦Project Repo📦</span>
+            <span onmouseup="prosite()">🖥Project Website🖥</span>
         </div>
 
         <span id="trafic-lights">
@@ -94,6 +111,7 @@
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.-->
+    <script src="scripts/require.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="scripts/textedit.js"></script>
     <script src="scripts/app.js"></script>

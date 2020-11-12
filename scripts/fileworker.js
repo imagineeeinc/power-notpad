@@ -1,5 +1,3 @@
-fs = require('fs');
-const { dialog } = require('electron').remote
 var curtxt = gettext()
 var curfile = ""
 
@@ -86,3 +84,7 @@ function saveas() {
         curtxt = gettext()
     }
 }
+
+ipc.on('open-file', function(filepath) {
+			alert(filepath);
+		});

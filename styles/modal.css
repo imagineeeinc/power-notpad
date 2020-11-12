@@ -9,6 +9,8 @@
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .modal-content {
     background-color: #fefefe;
@@ -18,8 +20,8 @@
     width: 80%;
     border-radius: 10px;
     box-shadow: 0 0 20px grey;
-    min-height: 200px;
-    overflow-y: auto;
+    height: 350px;
+    overflow-y: scroll;
 }
 
 .close-m {

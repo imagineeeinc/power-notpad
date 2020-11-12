@@ -1,5 +1,3 @@
-var find = document.getElementById("find")
-var replace = document.getElementById("replace")
 var findtxt
 var finder = false
 

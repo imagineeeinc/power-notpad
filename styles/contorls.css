@@ -81,8 +81,8 @@
   padding: 5px;
   display: block;
 }
-.con-men-mens > span:not(:last-child) {
-  border-bottom: 2px solid darkgrey;
+.con-men-mens > span:not(:first-child) {
+  border-top: 2px solid darkgrey;
 }
 .con-men-mens > span:hover {
   opacity: 1;
@@ -148,4 +148,7 @@ input[type="search"] {
 }
 input:focus {
   box-shadow: 0 0 15px lightgrey;
+}
+#update {
+  display: none;
 }

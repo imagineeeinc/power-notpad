@@ -1,4 +1,3 @@
-var text = document.getElementById("textbox")
 var undoli = []
 var redoli = []
 undoli.push(gettext())

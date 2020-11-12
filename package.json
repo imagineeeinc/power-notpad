@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/imagineeeinc/power-notpad#readme",
   "dependencies": {
+    "electron-dl": "^3.0.2",
     "request": "^2.88.2"
   },
   "devDependencies": {
@@ -35,14 +36,29 @@
   "build": {
     "appId": "power-notepad",
     "productName": "power-notepad",
-    "copyright": "Copyright © year Imagineee",
+    "copyright": "Copyright © 2020 Imagineee",
     "mac": {
-      "category": "public.app-category.productivity"
+      "category": "public.app-category.productivity",
+      "target": [
+        "default",
+        "dmg",
+        "zip"
+      ]
     },
     "win": {
       "target": [
         "portable",
-        "zip"
+        "zip",
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "apk",
+        "zip",
+        "deb",
+        "rpm"
       ]
     }
   }

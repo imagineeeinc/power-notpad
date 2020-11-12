@@ -1,39 +1,46 @@
-/*fs = require('fs');
 var dir = "Userfiles"
-var userusage = { isfirst: true, first: { open: "yes", time: 10 } }
-try {
-  if (fs.existsSync(dir + "/userusage.json" || dir + "/userconfig.json")) {
-    //file exists
-  }
-} catch(err) {
-    var userusage = { isfirst: true, first: { open: "yes", time: 10 } }
-    console.error(err)
-    fs.writeFile(dir + "/userusage.json", JSON.stringify(userusage),  function (err) {
-      if (err) return console.log(err);
-    })
-    fs.writeFile(dir + "/userconfig.json", "{}",  function (err) {
-        if (err) return console.log(err);
-    })
-}
+var userusage = { isfirst: true }
+var userconfig = { font_size: 16 }
+
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
 }
+
+try {
+  if (!fs.existsSync(dir + "/userusage.json")) {
+    //file exists
+    var userusage = { isfirst: true }
+    fs.writeFile(dir + "/userusage.json", JSON.stringify(userusage),  function (err) {
+      if (err) return console.log(err);
+    })
+  }
+} catch(err) {
+    console.error(err)
+}
+try {
+    if (!fs.existsSync(dir + "/userconfig.json")) {
+      //file exists
+      userconfig = { font_size: 16 }
+      fs.writeFile(dir + "/userconfig.json", JSON.stringify(userconfig),  function (err) {
+        if (err) return console.log(err);
+      })
+    }
+  } catch(err) {
+      console.error(err)
+  }
 //JSON.stringify()
 //JSON.parse()
-fs.writeFile(dir + "/userusage.json", JSON.stringify(userusage),  function (err) {
+/*fs.writeFile(dir + "/userconfig.json", "{}",  function (err) {
     if (err) return console.log(err);
-})
-fs.writeFile(dir + "/userconfig.json", "{}",  function (err) {
-    if (err) return console.log(err);
-})
+})*/
 //check for first time
 fs.readFile(dir + "/userusage.json", {encoding: 'utf-8'}, function(err,data){
     if (!err) {
         //console.log('received data: ' + data);
-        uusage = JSON.parse(data)
-        console.log(uusage)
-        if (uusage.isfirst === true) {
-            openmodal("<span style='text-align: center;'><h1>Power Notepad</h1><h4>welcome to power notepad, a more powerful note pad than your default notpad</h4></span>Current version: 1.0.0")
+        userusage = JSON.parse(data)
+        //console.log(userusage)
+        if (userusage.isfirst === true) {
+            about()
             userusage.isfirst = false
             fs.writeFile(dir + "/userusage.json", JSON.stringify(userusage),  function (err) {
                 if (err) return console.log(err);
@@ -43,4 +50,35 @@ fs.readFile(dir + "/userusage.json", {encoding: 'utf-8'}, function(err,data){
         console.log(err);
     }
 });
-*/
+fs.readFile(dir + "/userconfig.json", {encoding: 'utf-8'}, function(err,data){
+    if (!err) {
+        //console.log('received data: ' + data);
+        userconfig = JSON.parse(data)
+        setfsize(userconfig.font_size)
+    } else {
+        console.log(err);
+    }
+});
+
+function incresefsize() {
+    setfsize(userconfig.font_size + 2)
+    userconfig.font_size = userconfig.font_size + 2
+    fs.writeFile(dir + "/userconfig.json", JSON.stringify(userconfig),  function (err) {
+        if (err) return console.log(err);
+      })
+}
+function decresefsize() {
+    if (userconfig.font_size - 2 <= 6) {
+
+    } else {
+        setfsize(userconfig.font_size - 2)
+        userconfig.font_size = userconfig.font_size - 2
+        fs.writeFile(dir + "/userconfig.json", JSON.stringify(userconfig),  function (err) {
+            if (err) return console.log(err);
+        })
+    }
+}
+function setfsize(size) {
+    fsize.innerHTML = "#textbox {font-size: " + size +"px;}"
+    document.getElementById("cursize").innerHTML = "Current Size: " + size
+}
