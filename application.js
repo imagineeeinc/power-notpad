@@ -55,9 +55,7 @@ app.on('activate', () => {
     createWindow()
   }
 })
-/*
 ipcMain.on("download", function() {
   const win = BrowserWindow.getFocusedWindow();
  	console.log(download(win, "https://imagineeeinc.github.io/api/ver/power-notepad.ver.json", {saveAs: false, directory: app.getAppPath() + "/Userfiles", filename: "online-version.json"}));
 })
-*/

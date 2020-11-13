@@ -1,9 +1,9 @@
-var ver = JSON.parse('{"cur-rel-type": "beta","cur-ver": 1,"cur-sur-ver": 0,"cur-min-ver": 1,"cur-full-ver": "1.0.1"}')
+var ver = JSON.parse('{"cur-rel-type": "beta","cur-ver": 1,"cur-sur-ver": 0,"cur-min-ver": 2,"cur-full-ver": "1.0.2"}')
 if (navigator.onLine == true) {
     //get online ver
-    /*setTimeout(function() {
+    setTimeout(function() {
         ipc.send("download")
-    }, 2000)*/
+    }, 2000)
     //edit online ver to be correct
     fs.readFile('Userfiles/online-version.json', 'utf8' , (err, data) => {
         if (err) {

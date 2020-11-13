@@ -13,6 +13,7 @@ var request = require('request');
 var find = document.getElementById("find")
 var replace = document.getElementById("replace")
 var text = document.getElementById("textbox")
+var textmenu = document.getElementById("textmenu")
 
 var modal = document.getElementById("Modal");
 var mtext = document.getElementById("m-txt");

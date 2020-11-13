@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/titlebar.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/modal.css">
+
+    <script src="scripts/tweemoji.js" crossorigin="anonymous"></script>
     
     <style id="font-size">
         #textbox {
@@ -105,7 +107,26 @@
         </div>
       </div>
     <div id="main">
-        <div contenteditable="plaintext-only" id="textbox"></div>
+        <div contenteditable="plaintext-only" id="textbox" spellcheck="true"></div>
+        <div id="textmenu">
+            <span onclick="undo()">undo</span>
+            <span onclick="redo()">redo</span>
+            <br>
+            <span id="con-char-men">
+                <span id="con-chars">Insert Unicode Control Characters</span>
+                <br><br><br>
+                <span onclick="insertchar('‎')">Left to Right mark</span>
+                <span onclick="insertchar('‏')">Right to Left mark</span>
+                <span onclick="insertchar('‍')">Zero width joiner</span>
+                <span onclick="insertchar('‌')">Zero width non-joiner</span>
+                <span onclick="insertchar('‪')">Start Left to Right embeding</span>
+                <span onclick="insertchar('‪‫')">Start Right to Left embeding</span>
+                <span onclick="insertchar('‭')">Start Left to Right override</span>‫
+                <span onclick="insertchar('‮')">Start Right to Left override</span>
+                <span onclick="insertchar('‬')">Pop directional Formating</span>‫‫
+                <span onclick="insertchar('‬')">Pop directional Formating</span>‫‫
+            </span>
+        </div>
     </div>
     <!--<h1>Hello World!</h1>
     We are using node <script>document.write(process.versions.node)</script>,
@@ -123,5 +144,6 @@
     <script src="scripts/find.js"></script>
     <script src="scripts/special.js"></script>
     <script src="scripts/update.js"></script>
+    <script src="scripts/lz-string.js"></script>
 </body>
 </html>

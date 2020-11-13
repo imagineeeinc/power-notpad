@@ -29,3 +29,47 @@ mark {
     color: white;
     border-radius: 5px;
 }
+#textmenu {
+    min-width: 100px;
+    box-shadow: 0 0 10px lightgrey;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    background-color: white;
+    border-radius: 4px;
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+}
+#textmenu > span {
+    opacity: 0.7;
+    padding: 5px;
+    display: block;
+}
+#textmenu > span:not(:first-child) {
+    border-top: 2px solid darkgrey;
+}
+#textmenu > span:hover {
+    opacity: 1;
+    box-shadow: 0 0 5px lightgrey;
+}
+#con-chars {
+    position: sticky;
+}
+#con-char-men {
+    height: 200px;
+    overflow-y: scroll;
+    display: inline-block;
+}
+#con-char-men > span {
+    opacity: 0.7;
+    padding: 5px;
+    display: block;
+}
+#con-char-men > span:not(:first-child) {
+    border-top: 2px solid darkgrey;
+}
+#con-char-men > span:hover {
+    opacity: 1;
+    box-shadow: 0 0 5px lightgrey;
+}

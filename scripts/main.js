@@ -27,3 +27,19 @@ function redo() {
         settext(lastredo)
     }
 }
+
+text.oncontextmenu = function(event) {
+    event.preventDefault()
+    textmenu.style.left = event.pageX + "px";
+    textmenu.style.top = event.pageY + "px";
+    textmenu.style.display = "inline-block"
+}
+textmenu.onclick = function(event) {
+    event.stopPropagation();
+}
+document.onclick = function(event) {
+    textmenu.style.display = "none"
+}
+function insertchar(char) {
+    settext(gettext() + char)
+}
