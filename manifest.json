@@ -1,0 +1,52 @@
+{
+    "manifest_version": 2,
+    "name": "Power Notepad",
+    "short_name": "Power Notepad",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#3b10e6",
+    "theme_color": "#3b10e6",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "https://imagineeeinc.github.io/power-notepad/Favicon/android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "https://imagineeeinc.github.io/power-notepad/Favicon/apple-touch-icon.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "https://imagineeeinc.github.io/power-notepad/Favicon/android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "https://imagineeeinc.github.io/power-notepad/Favicon/favicon-16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "https://imagineeeinc.github.io/power-notepad/Favicon/favicon-32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "https://imagineeeinc.github.io/power-notepad/Favicon/favicon.ico",
+            "type": "image/ico",
+            "sizes": "48x48"
+        },
+        {
+            "src": "Favicon/maskable_icon.png",
+            "sizes": "930x930",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "url": "https://imagineeeinc.github.io/power-notepad/index.html",
+    "lang": "English",
+    "screenshots": [],
+    "description": "A small and powerful note taking app"
+}

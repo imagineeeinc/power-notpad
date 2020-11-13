@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Build your own Power Notepad</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+        <meta name="theme-color" content="white"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+        <link rel='icon' href='Favicon/favicon.ico' type='image/x-icon'>
+
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <link rel="manifest" href="manifest.json">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <a href="index.html">< back</a>
+        <h1 id="heading">Building your own Power Notepad</h1>
+        <br>
+        <br>
+        <p>
+            Things needed to install
+            <br>
+            <ul>
+                <li><a href="https://nodejs.org/">Node js</a></li>
+                <li><a href="https://git-scm.com/">Git (optional)</a></li>
+            </ul>
+            get the latest repo by typing this 
+            <br>
+            <pre><code>git clone https://github.com/imagineeeinc/power-notepad.git</code></pre>
+            in the command line or by downloding the zip from <a href="https://github.com/imagineeeinc/power-notepad/releases/">github</a>
+            <br>
+            next you have to install the dependencies by:
+            <pre><code>npm install</code></pre>
+            For testing run
+            <pre><code>npm run electron</code></pre>
+            <br>
+            And for building into a distributible, use the commands bellow depending on your system
+            <br>
+            <b>#Windows</b>
+            <pre><code>npm run dist-win</code></pre>
+            <br>
+            <b>#MacOS</b>
+            <pre><code>npm run dist-mac</code></pre>
+            <br>
+            <b>#Linux</b>
+            <pre><code>npm run dist-linux</code></pre>
+            <br>
+            and you will find the build file in the ‘dist’ folder which will be newely created.
+            <br>
+            <br>
+            And Done!
+        </p>
+        <br>
+        <hr>
+        <br>
+        <footer style="text-align: center;">
+            ©<script>document.write(new Date().getFullYear())</script>
+            <br>
+            Imagineee
+        </footer>
+    </body>
+</html>
