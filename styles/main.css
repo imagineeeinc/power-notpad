@@ -41,7 +41,7 @@ mark {
     padding: 5px;
     cursor: pointer;
 }
-#textmenu > span {
+#textmenu > span:not(#con-chars) {
     opacity: 0.7;
     padding: 5px;
     display: block;
@@ -55,6 +55,7 @@ mark {
 }
 #con-chars {
     position: sticky;
+    opacity: 1;
 }
 #con-char-men {
     height: 200px;

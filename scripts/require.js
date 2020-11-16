@@ -8,7 +8,6 @@ const contents = win.webContents
 var ipc = require('electron').ipcRenderer
 
 fs = require('fs');
-var request = require('request');
 
 var find = document.getElementById("find")
 var replace = document.getElementById("replace")

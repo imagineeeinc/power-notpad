@@ -61,7 +61,7 @@ function savenclose() {
         })
         curtxt = gettext()
     } else if (curfile == "") {
-        var save = dialog.showSaveDialogSync([BrowserWindow, ], {title: "Save File as"})
+        var save = dialog.showSaveDialogSync([BrowserWindow, ], {title: "Save File as", buttonLabel: "save"})
         //console.log(save)
         if (save != undefined) {
             curfile = save
@@ -74,7 +74,7 @@ function savenclose() {
     }
 }
 function saveas() {
-    var save = dialog.showSaveDialogSync([BrowserWindow, ], {title: "Save File as"})
+    var save = dialog.showSaveDialogSync([BrowserWindow, ], {title: "Save File as", buttonLabel: "save as"})
     //console.log(save)
     if (save != undefined) {
         curfile = save
@@ -86,5 +86,5 @@ function saveas() {
 }
 
 ipc.on('open-file', function(filepath) {
-			alert(filepath);
-		});
+	alert(filepath);
+});

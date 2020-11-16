@@ -1,6 +1,6 @@
 {
   "name": "power-notepad",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a more powerful notepad than the default notepad",
   "main": "application.js",
   "scripts": {
@@ -33,11 +33,9 @@
     "electron-builder": "^22.9.1"
   },
   "build": {
-    "ignore": "website",
     "appId": "power-notepad",
     "productName": "power-notepad",
     "copyright": "Copyright © 2020 Imagineee",
-    "app-bundle-id": "net.imagineee.power-notepad",
     "mac": {
       "category": "public.app-category.productivity",
       "target": [
