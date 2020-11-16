@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/imagineeeinc/power-notepad/issues"
   },
-  "homepage": "https://github.com/imagineeeinc/power-notepad#readme",
+  "homepage": "https://imagineeeinc.github.io/power-notepad/",
   "dependencies": {
     "electron-dl": "^3.0.2"
   },
