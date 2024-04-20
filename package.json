@@ -30,7 +30,7 @@
   "devDependencies": {
     "electron": "^13.6.6",
     "electron-reload": "^1.5.0",
-    "electron-builder": "^22.9.1"
+    "electron-builder": "^24.13.3"
   },
   "build": {
     "appId": "power-notepad",
